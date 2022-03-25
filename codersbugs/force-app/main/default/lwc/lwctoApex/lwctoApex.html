@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-card">
+        <h1 class="slds-card__header-title slds-align_absolute-center">Call apex from  lwc </h1>
+    </div>
+    <div class="slds-card">
+        <lightning-input name="input field" label='Input' onchange={onTextChage}  placeholder="Type something"></lightning-input>
+        <br>
+        <lightning-button name="send" label="sendData" onclick={callApexMethod}></lightning-button>
+    </div>
+   
+</template>

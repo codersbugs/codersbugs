@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable,flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride" access="global" controller="ToDoController">
+  <aura:attribute name="FirstParam" type="String" />
+  <aura:attribute name="SecondParam" type="String" />  
+    <c:todoapp aura:id="todoApp"/>
+</aura:component>

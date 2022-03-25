@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-card slds-border_bottom">
+        <h1>I am Parent</h1>
+        <p> valueFromChild =  {valueFromChild}</p>
+    </div>
+    <div class="slds-card slds-m-vertical_small slds-border_top">
+        <div class="slds-border_top">
+            <c-child-c oninputchange={handleValuesFromChild}></c-child-c>
+        </div>
+    </div>
+</template>

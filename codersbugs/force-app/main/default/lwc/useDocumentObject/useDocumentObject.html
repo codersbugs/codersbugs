@@ -1,0 +1,14 @@
+<template>
+    <template for:each={imagesArray} for:item="record">
+            <div key={hey} style="width:20rem">
+                <div class="slds-file slds-file_card">
+                    <figure>
+                        <a href="#" class="slds-file__crop">
+                            <span class="slds-assistive-text">Preview:</span>
+                                <img src={record.url} alt="Description of the image" />
+                        </a>
+                    </figure>
+                </div>
+            </div>
+    </template>
+</template>

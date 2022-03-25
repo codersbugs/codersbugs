@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride" access="global" controller="HomeControler">
+  <aura:attribute name="FirstParam" type="String" />
+  <aura:attribute name="SecondParam" type="String" />  
+    
+    <c:firstPage aura:id="home"/>
+</aura:component>

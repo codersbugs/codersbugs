@@ -1,0 +1,50 @@
+<template >
+    <div class="slds-card slds-grid slds-grid_vertical slds-align_absolute-center">
+        <div class="slds-col slds-grid">
+            <div class="slds-m-around_xx-small slds-align_absolute-center">
+                <div class="slds-form-element">
+                    <b style="height: 30px;"><label class="slds-form-element__label" for="text-input-id-47">Add new plan</label></b>
+                    <div class="slds-form-element__control">
+                        <lightning-input-rich-text value="" data-id={index} onchange={getToDo} > </lightning-input-rich-text> 
+                    </div>
+                </div> 
+            </div>  
+                   
+            <div class="slds-m-left_x-large slds-align_absolute-center ">   
+               <lightning-button onclick={addToDo} label="Add New ToDo"></lightning-button>
+            </div>                      
+        </div>
+    </div>
+    <div class="slds-align_absolute-center">
+        <b ><label style="font-size: 23px;" class="slds-form-element__label" for="text-input-id-47">My Next Plans</label></b>
+    </div>
+
+    <div class="slds-card slds-grid slds-grid_vertical">
+        <template for:each={accountList} for:item="lineItem">
+            
+            <article class="slds-card" key={lineItem.key}>
+                <div class="slds-card__header slds-grid">
+                  
+                    
+                    <div class="slds-media__body" style="border: 1px solid rgb(59, 59, 141);">
+                          {lineItem.ToDoRecord__c}
+                    </div>
+                    <div class="slds-no-flex">
+                       
+                      <button class="slds-button slds-button_destructive" onclick={deleteTodo} value={lineItem.Id}>Delete</button>
+                    </div>
+                  
+                </div>
+              </article>
+              
+            
+          </template>
+        <!-- <template for:each={accountList} for:item="lineItem">
+            
+                <lightning-input key={ke} value={lineItem.Name}>
+                </lightning-input>
+              
+            
+          </template> -->
+    </div>
+</template>
