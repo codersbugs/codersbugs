@@ -1,0 +1,9 @@
+<template>
+    <div class="slds-card">
+        <lightning-input label="name" name="name" onchange={getName}></lightning-input>
+    </div>
+
+    <div class="slds-card" if:true={showButton}>
+        <lightning-button name="Simple button " label="Simple button" onclick={changeObjectName}></lightning-button>
+    </div>
+</template>
