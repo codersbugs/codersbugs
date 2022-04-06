@@ -9,7 +9,7 @@
   
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
-            <property name="LabelOfRecentRecords" type="String" label="Label"  description="Leave blakn for default"/> 
+            <property name="LabelOfRecentRecords" type="String" label="Label"  description="Leave blank for default"/> 
             <property name="ObjectName" type="String" label="Object Name" datasource="apex://CloneRecentItems"/>
             <property name="NumberOfRecordToDisplay"  label="Number of record to display" type="Integer" default="1"/> 
         </targetConfig>

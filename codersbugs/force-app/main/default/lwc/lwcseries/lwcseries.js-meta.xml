@@ -5,4 +5,12 @@
     <targets>
         <target>lightning__RecordPage</target> 
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="Name" type="String" label="Name"  description="Name"/> 
+            
+        </targetConfig>
+        
+            
+    </targetConfigs>
 </LightningComponentBundle>
